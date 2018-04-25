@@ -40,6 +40,8 @@ export default class TodoList extends Component {
         const newState = this.state.items.filter((item) => {
             if (!item.checked) {
                 return item;
+            } else {
+
             }
         });
         this.setState({ items: newState });
@@ -48,13 +50,14 @@ export default class TodoList extends Component {
 
     render() {
         return (
-            <div>
+            <div className='mainContainer'>
+                <h1>A todo list</h1>
                 <form onSubmit={(e) => this.onSubmit(e)}>
                     <input type="text" ref="input"/>
                     <button type="submit">Submit</button>
                 </form>
                 <List items={this.state.items} onToggle={(item) => this.onToggle(item)} onRemove={(item) => this.onRemove(item)}/>
-                <button onClick={(item) => this.onRemoveDone(item)}>Summarize Me</button>
+                <button className='summarizebtn' onClick={(item) => this.onRemoveDone(item)}>Summarize Me</button>
             </div>
     )}
 
