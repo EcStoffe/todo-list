@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  line-height: 2.428571;
 }
 
 #root {
@@ -39,6 +40,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: space-evenly;
+
 }
 
 li > span {
@@ -50,6 +52,7 @@ li > span {
   width: 100%;
   border: 1px solid white;
   text-align: center;
+  vertical-align: middle;
 }
 
 .itemNotDone {
@@ -57,18 +60,17 @@ li > span {
   width: 100%;
   border: 1px solid white;
   text-align: center;
+  vertical-align: middle;
 }
 
 input[type="checkbox"] {
-  width: 25px; /*Desired width*/
-  height: 25px; /*Desired height*/
+  width: 28px; /*Desired width*/
+  height: 28px; /*Desired height*/
 }
 
 .btnrem {
-  padding: 2px;
-  margin-bottom: 4px;
-  align-self: center;
   margin-left: 2px;
+  margin-top: -2px;
 }
 
 @keyframes App-logo-spin {

@@ -53,7 +53,7 @@ export default class TodoList extends Component {
             <div className='mainContainer'>
                 <h1>A todo list</h1>
                 <form onSubmit={(e) => this.onSubmit(e)}>
-                    <input type="text" ref="input"/>
+                    <input placeholder='Enter task here...' type="text" ref="input"/>
                     <button type="submit">Submit</button>
                 </form>
                 <List items={this.state.items} onToggle={(item) => this.onToggle(item)} onRemove={(item) => this.onRemove(item)}/>
